@@ -180,6 +180,24 @@
   .case p{max-width:44rem;color:#E8DCCB;font-size:1.02rem}
   .case-takeaways{display:flex;gap:0.6rem;flex-wrap:wrap;margin-top:1.5rem}
   .takeaway{font-family:"IBM Plex Mono",monospace;font-size:0.72rem;padding:0.35rem 0.85rem;border:1px solid var(--mauve);border-radius:999px;color:var(--sand)}
+  .case.alt{background:var(--wash);color:var(--ink);border:1px solid var(--rule)}
+  .case.alt h3{color:var(--ink)}
+  .case.alt p{color:#5a3d38}
+  .case.alt .takeaway{border-color:var(--mauve);color:var(--ink)}
+  .case-link{
+    display:inline-block;margin-top:1.35rem;font-weight:700;font-size:0.95rem;
+    text-decoration:none;color:var(--gold);border-bottom:1.5px solid var(--gold);
+    padding-bottom:2px;transition:opacity .15s ease;
+  }
+  .case.alt .case-link{color:var(--ink);border-color:var(--gold)}
+  .case-link:hover{opacity:0.72}
+  .case-sub{
+    font-family:"IBM Plex Mono",monospace;font-size:0.72rem;letter-spacing:0.06em;
+    color:var(--mauve);margin-bottom:1rem;
+  }
+  .case .case-sub{color:var(--sand)}
+  .case.alt .case-sub{color:var(--mauve)}
+
   .proof-more{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
   @media (max-width:760px){.proof-more{grid-template-columns:1fr}}
   .more-card{border:1px dashed var(--rule);border-radius:8px;padding:1.6rem;background:#fff}
@@ -244,7 +262,7 @@
     <div class="fade-up">
       <span class="eyebrow">Fractional CFO&nbsp;|&nbsp;Freedom Architect</span>
       <h1>Clean numbers.<br>Clear vision.<br><em>Your freedom.</em></h1>
-      <p class="lede">You started your business to have more freedom. I do the math that helps you get it.</p>
+      <p class="lede">Every founder has a freedom point — the moment when their business fuels their life instead of consuming it. Most have never envisioned it. That's the first thing we do together. Some clients are building toward an exit. Some are building a company that pays well and preserves their time. Either way, you pick the destination and I'll do the math.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="#work">Learn more</a>
       </div>
@@ -340,26 +358,42 @@
     <h2>Real companies, real numbers.</h2>
     <p class="lead">How this looks in practice.</p>
 
+
     <div class="case">
       <span class="eyebrow">Case study</span>
-      <h3>StageWing — equipment rental marketplace</h3>
-      <p>StageWing rents out equipment owned by other people and layers paid services on top. Two kinds of revenue with completely different costs were blended together, so the margins looked random and the founder couldn't tell what was actually making money. I separated the streams, rebuilt the forecast around each one, and added best-, base-, and worst-case toggles. Now every month starts with a clear answer: what's profitable, what isn't, and how long the cash lasts.</p>
+      <h3>Rebuilding Financial Infrastructure After a Reincorporation</h3>
+      <p class="case-sub">StageWing — event and stage equipment rental marketplace</p>
+      <p>StageWing rents event and stage equipment through a network of independent operators. The company had grown faster than its financial infrastructure — a reincorporation from LLC to C-corp left unresolved items on the books, money moved through six-plus accounts with no written rules, and the founder couldn't say on any given day whether the business could afford a purchase.</p>
+      <p style="margin-top:0.9rem">I went through every month of the ledger transaction by transaction rather than working from summary reports. That surfaced duplicate transactions from a misconfigured payment processor, a receivables balance the business model can't generate, and legacy obligations from the dissolved entity still being serviced by the successor company. With clean data, the model made the real constraint obvious: revenue was capped by how much service and logistics load one person could absorb, not by demand — which meant the intuitive growth levers would have missed. The engagement closed with a sequenced growth plan and a written SOP set authored for a future bookkeeper, so the founder's time stays on revenue.</p>
       <div class="case-takeaways">
-        <span class="takeaway">Two revenue streams untangled</span>
-        <span class="takeaway">Scenario forecast built</span>
-        <span class="takeaway">Runway tracked monthly</span>
+        <span class="takeaway">Forensic ledger review</span>
+        <span class="takeaway">Cash flow model built from actuals</span>
+        <span class="takeaway">Constraint named</span>
+        <span class="takeaway">SOP set delivered</span>
       </div>
+      <!-- TODO: upload StageWing_Case_Study.pdf to your repo, then this link works as-is -->
+      <a class="case-link" href="StageWing_Case_Study.pdf" target="_blank" rel="noopener">Read the full case study &rarr;</a>
     </div>
 
-    <div class="proof-more">
-      <div class="more-card">
-        <h4>More case studies</h4>
-        <p>Coming soon — new client work gets written up here as it ships.</p>
+    <div class="case alt">
+      <span class="eyebrow">Case study</span>
+      <h3>Onboarding a Visual Artist</h3>
+      <p class="case-sub">Relief printmaker — creative-economy business</p>
+      <p>A full-time working artist selling through galleries, commissions, residencies, and grants. The artistic output was strong and the grant discipline was real — roughly twenty applications a month — but the money had no structure behind it. Fellowships were carrying the year, business and personal spending ran through one account, and the tiered pricing had never been connected to what a print actually costs to make.</p>
+      <p style="margin-top:0.9rem">We started by separating the finances, because nothing downstream is trustworthy without that. Then I built the revenue target into unit economics by product tier, which showed the volume each channel actually has to produce — and made clear that the cheapest tier had the highest volume and the worst return on studio hours. The last piece was focus: one audience, one product, one channel, one message, held for one year, instead of chasing every channel at once. Onboarding closed with a 90-day priority stack and KPIs set before any execution began.</p>
+      <div class="case-takeaways">
+        <span class="takeaway">Business and personal separated</span>
+        <span class="takeaway">Unit economics by tier</span>
+        <span class="takeaway">Strategic focus committed</span>
+        <span class="takeaway">KPIs and quarterly cadence</span>
       </div>
-      <div class="more-card">
-        <h4>Free resources &amp; templates</h4>
-        <p>Models and tools for founders, built on the same structure I use with clients. Substack subscribers get them first.</p>
-      </div>
+      <!-- TODO: upload Porous_Press_Case_Study.pdf to your repo, then this link works as-is -->
+      <a class="case-link" href="Porous_Press_Case_Study.pdf" target="_blank" rel="noopener">Read the full case study &rarr;</a>
+    </div>
+
+    <div class="more-card">
+      <h4>Free resources &amp; templates</h4>
+      <p>Models and tools for founders, built on the same structure I use with clients. Substack subscribers get them first.</p>
     </div>
   </div>
 </section>
